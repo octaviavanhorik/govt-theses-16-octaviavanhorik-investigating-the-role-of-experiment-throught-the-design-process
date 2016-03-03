@@ -187,7 +187,6 @@ h5 {
   max-width:60%;
   float:center;
   padding-right:45px;
-  border-right:2px solid black;
 
 }
 
@@ -321,7 +320,9 @@ transition:all 0.2s ease;
 }
 
 
-@media screen and (min-width: 300px), projection and (min-width: 300px), {
+@media projection and (min-width: 300px){}
+
+@media screen and (min-width: 300px) and (max-width:600px){
       .sidenote {
         float:none;
         position: absolute;
@@ -336,7 +337,7 @@ transition:all 0.2s ease;
   font-size:10px;
 
 }
- }     
+}     
 
 
 
