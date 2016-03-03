@@ -184,10 +184,10 @@ h5 {
 /*--------------------- THESIS WRAPPER ---------------------*/
 
 #thesis_wrapper{
-  max-width:70%;
+  max-width:60%;
   float:center;
-  padding-right:35px;
-  border-right:1.5px solid black;
+  padding-right:45px;
+  border-right:2px solid black;
 
 }
 
