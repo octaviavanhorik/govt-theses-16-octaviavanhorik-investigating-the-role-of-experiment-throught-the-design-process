@@ -320,9 +320,7 @@ transition:all 0.2s ease;
 }
 
 
-@media projection and (min-width: 300px){}
-
-@media screen and (min-width: 300px) and (max-width:600px){
+@media screen and (min-width: 300px), projection and (min-width: 300px), {
       .sidenote {
         float:none;
         position: absolute;
