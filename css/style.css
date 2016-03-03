@@ -321,7 +321,7 @@ transition:all 0.2s ease;
 }
 
 
-    @media screen and (min-width: 900px), projection and (min-width: 900px), tv and (min-width: 900px) {
+@media screen and (min-width: 300px), projection and (min-width: 300px), {
       .sidenote {
         float:none;
         position: absolute;
@@ -329,7 +329,14 @@ transition:all 0.2s ease;
         color:black;
         width: 100px;
         margin: 0;
-      }
+        }
+
+#thesis_wrapper p{
+  
+  font-size:10px;
+
+}
+ }     
 
 
 
@@ -505,8 +512,6 @@ body#page1{
 }
 
 /*--------------SCREEN SPECIFIC--------------------*/
-
-@media screen and (min-width: 300px) and (max-width: 800px) {
     
 @media screen {
     .print-only {
@@ -514,9 +519,6 @@ body#page1{
     }
 }
 
-
-
-/*--------------------- PRINT ---------------------*/
 
 
 
