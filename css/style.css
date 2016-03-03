@@ -331,6 +331,7 @@ transition:all 0.2s ease;
         margin: 0;
       }
     }
+    @media screen and (min-width: 300px) and (max-width: 800px) {
     @media screen and (min-width: 1070px), projection and (min-width: 1070px), tv and (min-width: 1070px) {
     }
 }
@@ -516,7 +517,7 @@ body#page1{
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 800px){
+
 
 /*--------------------- PRINT ---------------------*/
 
