@@ -320,22 +320,6 @@ transition:all 0.2s ease;
 }
 
 
-@media screen and (min-width: 300px), projection and (min-width: 300px), {
-      .sidenote {
-        float:none;
-        position: absolute;
-        right: 0;
-        color:black;
-        width: 100px;
-        margin: 0;
-        }
-
-#thesis_wrapper p{
-  
-  font-size:10px;
-
-}
-}     
 
 
 
@@ -518,6 +502,45 @@ body#page1{
     }
 }
 
+@media projection and (min-width: 300px){}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+      .sidenote {
+        float:none;
+        position: absolute;
+        right: 0;
+        color:black;
+        width: 100px;
+        margin: 0;
+        }
+
+#thesis_wrapper p{
+  
+  font-size:10px;
+  line-height: 12px;
+
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size:10px;
+  letter-spacing: 0.05em;
+  text-align:center;
+  color:black;
+  margin-bottom:-5px;
+}
+
+.chapter{
+padding-top:0px;
+padding-bottom:0px;
+margin-left:-60px;
+
+}
+
+
+
+}     
 
 
 
