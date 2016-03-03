@@ -1,0 +1,526 @@
+
+
+/*--------------------- MAIN ---------------------*/
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+#navbar{
+  opacity:20;
+  position:fixed;
+  left:0;
+  top:0;
+  padding-left:20px;
+  margin-bottom:10%;
+  height:60%;
+  width:auto;
+}
+
+.sidebar a{
+  font-family:'PT Sans', sans-serif;
+  color:black;
+  text-decoration:none;
+  margin-top:35px;
+  font-size:20px;
+  line-height:60px;
+}
+
+.sidebar span{
+  opacity:0;
+  padding-left:10px;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.sidebar a:hover{
+  color:black;
+}
+.sidebar a:hover span{
+  color:black;
+  display:inline;
+  opacity:1;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+
+
+progress {
+  /* Positioning */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index:999;
+
+  /* Dimensions */
+  width: 100%;
+  height: 10px;
+
+  /* Reset the appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Get rid of the default border in Firefox/Opera. */
+  border: none;
+
+  /* Progress bar container for Firefox/IE10+ */
+  background-color: transparent;
+
+  /* Progress bar value for IE10+ */
+  color: black;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+progress::-webkit-progress-value {
+  background-color: black;
+}
+
+progress::-moz-progress-bar {
+  background-color: black;
+}
+
+
+
+body {
+  background-color:white;
+  text-rendering: optimizeLegibility;
+  max-width:70%;
+  margin-left:20%;
+  margin-right:10%;
+  overflow-x:hidden !important;
+  -moz-font-feature-settings:"pnum";
+  -ms-font-feature-settings:"pnum";
+  -o-font-feature-settings:"pnum";
+  -webkit-font-feature-settings:"pnum";
+  font-feature-settings:"pnum";
+}
+
+
+
+footer {
+  font-family:'PT Sans', sans-serif;
+  font-size:12px;
+  float:left;
+  color:black;
+  padding-top:100px;
+  padding-bottom:25px;
+
+}
+
+footer a {
+  padding-bottom:1px;
+  text-decoration:none;
+  color:black;
+  font-size:12px;
+}
+footer a:hover{
+  color:black;
+}
+
+h1 {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size:80px;
+  letter-spacing: 0.05em;
+  text-align:center;
+  color:black;
+  margin-bottom:-5px;
+}
+
+.part{
+  opacity:0;
+  padding-top:60px;
+  padding-bottom:60px;
+  width:100% !important;
+  background-color:white;
+}
+
+
+h2 {
+  font-family:'PT Sans', sans-serif;
+  font-weight:bolder;
+  font-size:30px;
+  text-align:left;
+  color:black;
+  margin-bottom:-5px;
+}
+
+h3 {
+  font-family:'PT Sans', sans-serif;
+  font-weight:bolder;
+  font-size:25px;
+  text-align:left;
+  color:black;
+  margin-bottom:-5px;
+}
+
+h4 {
+  font-family:'PT Sans', sans-serif;
+  font-weight:bolder;
+  font-size:20px;
+  text-align:left;
+  color:black;
+  margin-bottom:-5px;
+}
+
+h5 {
+  font-family: 'Droid Serif', serif;
+  text-decoration:none;
+  font-weight:bolder;
+  font-size:60px;
+  text-align:left;
+  color:black;
+  margin-top:-5px;
+}
+
+/*--------------------- THESIS WRAPPER ---------------------*/
+
+#thesis_wrapper{
+  max-width:70%;
+  float:center;
+  padding-right:35px;
+  border-right:1.5px solid black;
+
+}
+
+#thesis_wrapper p{
+  font-family: 'PT Sans', sans-serif;
+  font-weight:normal;
+  font-size:20px;
+  line-height:30px;
+  text-align:justify;
+  color:black;
+  text-indent:0px;
+}
+
+#thesis_wrapper sup{
+    vertical-align: top;
+    position:relative;
+    font-size: 12px;
+    top:0.5em;
+}
+
+
+#thesis_wrapper sup:hover{
+  color:gray;
+    cursor:e-resize;
+}
+
+#thesis_wrapper sup:hover + .sidenote{
+  margin-right:100px;
+  color:black;
+  opacity:1;
+  -webkit-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+}
+
+#thesis_wrapper sup a{
+  font-size:12px;
+   line-height:20px;
+}
+/*--------------------- THUMB / IMG ---------------------*/
+
+
+
+.thumb{
+  display:block;
+  float:right;
+
+
+}
+.thumb img{
+width:100%;
+height:auto;
+filter:gray;
+-webkit-filter:grayscale(100%);
+-webkit-transition:all 0.2s ease;
+transition:all 0.2s ease;
+}
+
+.thumb img:hover{
+  opacity:1;
+  filter:none;
+  -webkit-filter:grayscale(0%);
+  -webkit-transition:all 0.1s ease;
+  transition:all 0.1s ease;
+}
+
+.thumb p{
+  margin-top:-2px;
+  opacity:0;
+  font-size:14px !important;
+  -webkit-transition:all 0.1s ease;
+  transition:all 0.1s ease;
+}
+
+.thumb:hover p{
+  opacity:1;
+  -webkit-transition:all 0.1s ease;
+  transition:all 0.1s ease;
+}
+
+/*--------------------- BLOCKQUOTE ---------------------*/
+
+
+.blockquote{
+  padding-top:35px;
+  padding-bottom:35px;
+  font-family: 'Droid Serif', serif;
+  font-weight: italic;
+  text-align:left justify;
+  margin-left:65px;
+  font-size:45px;
+  line-height:55px;
+}
+.blockquote sup{
+  font-family: 'Droid Serif', serif;
+  vertical-align: top;
+  position:relative;
+  font-size: 30px;
+  top:-0.5em;
+}
+
+
+
+
+
+/*--------------------- THESIS WRAPPER (SIDENOTES) ---------------------*/
+
+
+#thesis_wrapper .sidenote{
+    color:#e5e5e5;
+    text-indent:0px;
+    text-align:left;
+    overflow-x:hidden;
+    float: left;
+    width: 200px;
+    margin: 1px;
+    padding:10px;
+    border-top:5px solid white;
+    font-size:14px;
+    line-height:15px;
+    font-family:'PT Sans', sans-serif;
+    opacity:0;
+    -webkit-transition:all 1s ease;
+    transition:all 1s ease;
+}
+
+
+.sidenote a{
+  font-size:12px;
+  line-height:13px;
+  font-family:'PT Sans', sans-serif;
+}
+
+
+    @media screen and (min-width: 900px), projection and (min-width: 900px), tv and (min-width: 900px) {
+      .sidenote {
+        float:none;
+        position: absolute;
+        right: 0;
+        color:black;
+        width: 100px;
+        margin: 0;
+      }
+    }
+    @media screen and (min-width: 1070px), projection and (min-width: 1070px), tv and (min-width: 1070px) {
+    }
+}
+
+
+
+
+
+
+/*--------------------- TABLE OF CONTENTS ---------------------*/
+
+
+#table_of_content{
+
+}
+
+.contents {
+  list-style-type:none;
+  text-align:left;
+  font-size:50px;
+  line-height:32px;
+
+}
+
+.contents a{
+  font-family:'PT Sans', sans-serif;
+  text-transform:uppercase;
+  font-size:30px;
+  line-height:32px;
+  color:black;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.contents a:hover{
+  cursor:pointer;
+  opacity:0.3;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+
+
+/*--------------------- CHAPTERS ---------------------*/
+
+.chapter a{
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  position:relative;
+  font-size:30px !important;
+  line-height:31px;
+  color:#1e1e1e;
+}
+.chapter{
+padding-top:40px;
+padding-bottom:40px;
+margin-left:-60px;
+
+}
+
+
+
+
+/*--------------------- SPLASH PAGE ---------------------*/
+
+body#page1{
+  background-color:#f8f8f8;
+
+}
+
+#splash{
+  margin-bottom:10%;
+}
+
+.readon{
+  margin-top:100px;
+  margin-bottom:100px;
+}
+.readon a{
+  font-size:20px;
+  font-family: 'PT Sans', sans-serif;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:black;
+}
+.readon a span{
+  visibility:hidden;
+}
+.readon a:hover span{
+  visibility:visible;
+}
+
+
+#splash p{
+
+  width:70%;
+  font-family:'PT Sans', sans-serif;
+  font-size:20px;
+  line-height:27px;
+  text-align:left;
+  color:black;
+}
+
+
+.splash-title {
+  font-family: 'PT Sans', sans-serif;
+  color:black !important;
+  font-size:24px !important;
+  text-transform:none;
+  line-height:150px !important;
+  letter-spacing:-0.01em;
+}
+
+/*--------------------- SOURCES WRAPPER ---------------------*/
+
+.backarrow a{
+  position:fixed;
+  text-decoration:none;
+  font-family:'PT Sans' sans-serif;
+  color:white;
+  font-size:100px;
+  margin-top:22%;
+  margin-bottom:22%;
+  max-height:auto%;
+  top:0;
+  left:0;
+  padding:0px 0px 0px 30px;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.backarrow a:hover{
+  color:black;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+.backarrow a span{
+  position:relative;
+  padding-bottom:50px !important;
+  font-size:22px;
+  visibility:hidden
+}
+.backarrow a:hover span{
+  visibility:visible;
+}
+
+#sources_wrapper {
+  font-family:'PT Sans', sans-serif;
+  font-size:14px;
+}
+
+#sources_wrapper a{
+  text-decoration:none;
+  color: gray;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+#sources_wrapper a:hover{
+  color:black;
+  border-bottom:1px solid black;
+  -webkit-transition:all 0.3s ease;
+  transition:all 0.3s ease;
+}
+
+/*--------------------- SOURCES END PAPER ---------------------*/
+
+.endsource{
+  padding-top:15px;
+  padding-bottom:20px;
+  font-family: 'Droid Serif', serif;
+  text-align:left;
+  font-size:15px;
+  line-height:25px;
+}
+
+/*--------------SCREEN SPECIFIC--------------------*/
+
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px){
+
+/*--------------------- PRINT ---------------------*/
+
+
+
+
+

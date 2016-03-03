@@ -1,0 +1,69 @@
+/* Because we link in this stylesheet with media=print from index.html,
+   these styles only apply when printing */
+
+.screen-only {
+    display: none;
+}
+
+nav {
+    display: none;
+}
+
+.navbar {
+  display: none;
+}
+
+#thesis_wrapper {
+    max-width: 90%;
+    border-right: none;
+}
+
+h1 {
+    font-size: 40px;
+    opacity: 1;
+}
+
+h2 {
+    position: center;
+}
+
+h3 {
+    font-size: 20px;
+    padding-left: 0px;
+    page-break-before: always;
+}
+
+/* Always start a new page when we encounter a ‘part’ box */
+.part {
+    page-break-before: always;
+}
+
+
+.blockquote{
+    font-size: 35px;
+    line-height:45px;
+    font-weight: bolder;
+}
+
+/* Make the sidenotes visible */
+#thesis_wrapper .sidenote {
+    opacity: 1;
+}
+
+.thumb p{
+  opacity:1;
+}  
+
+.page-break-before {
+    page-break-before: avoid;
+}
+
+.page-break-after {
+    page-break-after: avoid;
+}
+
+p {
+    page-break-inside: avoid;
+}
+
+
